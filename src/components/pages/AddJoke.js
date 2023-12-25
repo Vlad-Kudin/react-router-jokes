@@ -1,5 +1,9 @@
+// import JokeForm from "../components/joes/JokeForm"
+
+import JokeForm from "../jokes/JokeForm";
+
 const AddJoke = () => {
-  return <h1>Add Joke Page</h1>
+  return <JokeForm />
 };
 
 export default AddJoke;
