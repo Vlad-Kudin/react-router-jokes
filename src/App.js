@@ -1,7 +1,7 @@
 import { Route, Switch, Redirect } from "react-router-dom";
-import JokeDetails from "./components/pages/JokeDetails";
-import AddJoke from "./components/pages/AddJoke";
-import Jokes from "./components/pages/Jokes";
+import JokeDetails from "./pages/JokeDetails";
+import AddJoke from "./pages/AddJoke";
+import Jokes from "./pages/Jokes";
 import Layout from "./components/layout/Layout";
 
 function App() {
