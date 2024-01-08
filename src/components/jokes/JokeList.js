@@ -24,7 +24,12 @@ const JokeList = (props) => {
   const sortedJokes = sortJokes(props.jokes, isSortingAscending);
 
   const toggleSortHandler = () => {
-    history.push('/jokes?sort=' + (isSortingAscending ? 'desc' : 'asc'))
+    history.push({
+      pathname: location.pathname,
+      search: `?sort= ${(isSortingAscending ? 'desc' : 'asc')}`
+    })
+
+    // history.push(`${location.pathname}?sort=` + (isSortingAscending ? 'desc' : 'asc'))
   };
 
   return (
